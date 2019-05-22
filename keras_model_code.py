@@ -88,7 +88,7 @@ layer_dict2 = {
 }
 
 code1, model1 = keras_build_simple_sequential(layer_dict1)
-code2, _, model2 = keras_build_simple_parallel(layer_dict2)
+code2, op, model2 = keras_build_simple_parallel(layer_dict2)
 
 print(code1)
 model1.summary()
@@ -96,4 +96,5 @@ model1.summary()
 print()
 
 print(code2)
+print(op)
 model2.summary()
